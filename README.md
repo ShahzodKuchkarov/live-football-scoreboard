@@ -21,4 +21,4 @@ This project is a football scoreboard application built using Create React App, 
 ## Setup & Installation
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/football-scoreboard.git
+   git clone https://github.com/ShahzodKuchkarov/football-scoreboard.git
