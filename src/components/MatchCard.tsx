@@ -11,11 +11,11 @@ interface Props{
 function MatchCard({home, away, homeScore, awayScore}:Props) {
   return (
     <Card sx={{mb:2}}>
-<CardContent>
-    <Typography>
-    {`${home} ${homeScore} - ${awayScore} ${away}`}
-    </Typography>
-</CardContent>
+       <CardContent>
+        <Typography>
+        {`${home} ${homeScore} - ${awayScore} ${away}`}
+        </Typography>
+      </CardContent>
     </Card>
   )
 }

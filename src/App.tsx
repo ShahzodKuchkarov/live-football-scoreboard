@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Container, Typography } from '@mui/material';
+import {store} from './redux/store';
+import ScoreBoard from './components/ScoreBoard';
+import StartMatchForm from './components/StartMatchForm';
+import { Provider } from 'react-redux';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Container maxWidth="sm" sx ={{mt:4}}>
+         <Typography variant='h4' align='center' gutterBottom>
+           Live Football Scoreboard
+         </Typography>
+         <StartMatchForm/>
+         <ScoreBoard/>
+    </Container>
+    </Provider>
   );
 }
 
