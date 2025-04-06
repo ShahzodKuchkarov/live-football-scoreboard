@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store'
 import { updateScore, finishMatch } from '../redux/scoreboardSlice';
 
-jest.mock('../store/scoreboardSlice', () => ({
+jest.mock('../redux/scoreboardSlice', () => ({
   updateScore: jest.fn(),
   finishMatch: jest.fn(),
 }));

@@ -16,7 +16,7 @@ function StartMatchForm() {
     }
   }
   return (
-    <Stack>
+    <Stack data-testid="start-match-form">
       <TextField label="Home Team" value={home} onChange={e => setHome(e.target.value)} />
       <TextField label="Away Team" value={away} onChange={e => setAway(e.target.value)} />
       <Button variant="contained" onClick={handleStart}>Start</Button>

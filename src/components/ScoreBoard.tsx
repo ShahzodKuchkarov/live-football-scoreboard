@@ -14,11 +14,11 @@ const matches = useSelector((state:RootState) => state.scoreboard.matches)
 });
   
   return (
-    <>
+    <div data-testid="score-board">
     {matches.map((match, idx) =>(
       <MatchCard key={idx} {...match}/>
     ))}
-    </>
+    </div>
   )
 }
 
